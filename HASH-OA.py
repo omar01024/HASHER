@@ -1,3 +1,6 @@
+# © 2025 Omar Ayman. All rights reserved.
+# This software is licensed for personal and educational use only.
+
 import tkinter as tk
 import hashlib
 import pyperclip
@@ -35,7 +38,7 @@ def compare_hashes():
 # GUI
 root = tk.Tk()
 root.title("Multi-Hash Hasher")
-root.geometry("600x450")
+root.geometry("600x470")
 
 # Entry and Encrypt
 tk.Label(root, text="Enter text:", font=("Arial", 14)).pack(pady=10)
@@ -66,5 +69,14 @@ compare_entry.pack()
 tk.Button(root, text="Compare Hashes", command=compare_hashes).pack(pady=5)
 compare_result = tk.Label(root, text="", font=("Arial", 12))
 compare_result.pack(pady=5)
+
+# Copyright Label
+copyright_label = tk.Label(
+    root,
+    text="© 2025 Omar Ayman | All rights reserved.",
+    font=("Arial", 8),
+    fg="gray"
+)
+copyright_label.pack(pady=5)
 
 root.mainloop()
